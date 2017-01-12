@@ -1,0 +1,16 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Telolet
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+	<h1 class="telolet-dialog">Press mic and say <br>"Om Telolet Om"</h1>
+	<h1 class="transcript">{{recorded}}</h1>
+	<img src="assets/image/bus.gif" *ngIf="showBus" class="center"/>
+	<ion-fab center bottom>
+	<button icon-only ion-fab color="primary" (click)="SpeechToText()" class="speaker"><ion-icon name="mic"></ion-icon></button>
+	</ion-fab>
+</ion-content>
